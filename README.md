@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # biocode_webpage
 
 ## Project setup
@@ -17,3 +18,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# Biocode-WebPage
+Projeto para a iniciação na empresa júnior Biocode.
+>>>>>>> 46ef73af74538adfba5922f81402b3513f8deb22
