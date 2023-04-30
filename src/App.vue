@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- <Header /> -->
+    <header>
+  <div class="logo">Logo Here</div>
+  <nav class="header_nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><button @click="scroll">Footer</button></li>
+    </ul>
+  </nav>
+  <div class="cta">
+    <button>Sign Up</button>
+  </div>
+</header>
+    <Company />
+    <Company />
+    <section id="footer">
+      <Footer />
+    </section>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+import Header from './components/header_exapmle.vue'
+import Footer from './components/footer_example.vue'
+import Company from './components/about_our_company.vue'
+import {createWebHistory, createRouter} from "vue-router"
+
+
+export default{
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Company,
+    Footer,
+  },
+  methods: {
+    scroll() {
+      const element = document.getElementById('footer');
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+</script>
