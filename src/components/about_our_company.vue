@@ -18,7 +18,7 @@
   
   <style>
   .about {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding: 3rem 0;
   }
   
@@ -42,11 +42,13 @@
   }
   
   h2 {
+    color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
   
   p {
+    color: #ffffff;
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;

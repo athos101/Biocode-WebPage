@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #E11955;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
