@@ -7,7 +7,7 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><button @click="scroll">Footer</button></li>
+      <li><a @click="scroll" style="cursor: pointer;">Footer</a></li>
     </ul>
   </nav>
   <div class="cta">
