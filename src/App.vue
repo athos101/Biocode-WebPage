@@ -16,7 +16,8 @@
     </header>
     <div id="body">
       <Company />
-        <Company />
+      <Company />
+      <Services />
     </div>  
 
       <section id="footer">
@@ -37,7 +38,7 @@
 import Header from './components/header_exapmle.vue'
 import Footer from './components/footer_example.vue'
 import Company from './components/about_our_company.vue'
-import {createWebHistory, createRouter} from "vue-router"
+import Services from './components/services.vue'
 
 
 export default{
@@ -46,6 +47,7 @@ export default{
     Header,
     Company,
     Footer,
+    Services,
   },
   methods: {
     scroll() {
