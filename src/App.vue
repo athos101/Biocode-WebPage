@@ -30,6 +30,7 @@
 <style>
   body{
     background-color: #0A1D3E;
+    font-family: 'Montserrat', sans-serif;
   }
 </style>
 
