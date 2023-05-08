@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>About Our Company</h2>
+            <h2>Seção Inicial</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor velit quis tortor molestie, sed blandit quam efficitur. Donec quis bibendum nisi. Praesent tincidunt lorem id arcu pellentesque, non euismod nulla imperdiet. Duis sed mollis quam. Mauris interdum eros sed nisi iaculis, vel faucibus enim tincidunt. Integer vel nunc et sapien faucibus mollis a in mi.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor velit quis tortor molestie, sed blandit quam efficitur. Donec quis bibendum nisi. Praesent tincidunt lorem id arcu pellentesque, non euismod nulla imperdiet.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
