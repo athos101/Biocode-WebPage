@@ -21,6 +21,7 @@
        
     <div id="body">
      <Company id="company-section" />
+     <Historia id="historia-section" />
       <Services id="services-section" />
      <Contato id="contato-section" />
     </div>  
