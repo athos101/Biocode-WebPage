@@ -1,6 +1,6 @@
 <template>
+    <p class="title">SERVIÇOS</p>
     <div class="column">
-        <p class="title">SERVIÇOS</p>
 
         <div class="row-1">
             <ServiceCard class="service-card" :title="mobileTitle" :text="mobileText" :item="mobileItem" />
@@ -25,24 +25,29 @@
     margin: 120px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .title{
     font-size: 32px;
     margin-bottom: 80px;
+    margin-left: 10%;
 }
 
 .row-1{
+    width: 1200px;
     display: flex;
     flex: 1;
     flex-direction: row;
 }
 .row-2{
+    width: 1200px;
     display: flex;
     flex: 1;
     flex-direction: row;
 }
 .row-3{
+    width: 1200px;
     display: flex;
     flex: 1;
     flex-direction: row;

@@ -17,6 +17,7 @@
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid #FFFFFF;
     height: 300px;
+    width: 450px;
     border-radius: 20px;
 
     display: flex;
@@ -29,8 +30,8 @@
     align-self: center;
     padding-left: 15px;
     padding-right: 15px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .card-content {
