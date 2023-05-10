@@ -2,24 +2,27 @@
   <div id="app">
     <!-- <Header /> -->
     <header>
-      <div class="logo">Logo Here</div>
+      <div class="logo-container">
+    <img src="./assets/blogo.png" alt="Logo" height="60" width="60">
+    <h1 class="title">BIOCODE JR</h1>
+  </div>
       <nav class="header_nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a @click="scroll" style="cursor: pointer;">Footer</a></li>
+          <li><a @click="scrollToSection('company-section')" style="cursor: pointer;">Quem somos</a></li>
+          <li><a @click="scrollToSection('services-section')" style="cursor: pointer;">Serviços</a></li>
+          <li><a @click="scrollToSection('contato-section')" style="cursor: pointer;">Contato</a></li>
         </ul>
+        
       </nav>
-      <div class="cta">
-        <button>Sign Up</button>
-      </div>
+     
     </header>
+    
+        
+       
     <div id="body">
-      <Company />
-      <Company />
-      <Historia />
-      <Services />
-      <Contato />
+     <Company id="company-section" />
+      <Services id="services-section" />
+     <Contato id="contato-section" />
     </div>  
 
       <section id="footer">
@@ -29,8 +32,20 @@
   </div>
 </template>
 
+<style>
+
+body{
+        padding: 0;
+        margin:0;
+
+      }
+  body{
+    background-color: #0A1D3E;
+    font-family: 'Montserrat', sans-serif;
+  }
+</style>
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 import Header from './components/header_exapmle.vue'
 import Footer from './components/footer_example.vue'
@@ -50,22 +65,16 @@ export default{
     Historia,
   },
   methods: {
-    scroll() {
-      const element = document.getElementById('footer');
+    
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    
   },
+ 
+  
 
 }
+
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
