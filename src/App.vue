@@ -15,8 +15,7 @@
       </div>
     </header>
     <div id="body">
-      <Company />
-      <Company />
+      <Company />    
       <Services />
       <Contato />
     </div>  

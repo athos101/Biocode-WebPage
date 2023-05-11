@@ -5,13 +5,14 @@
           <div class="col-md-6">
            <!-- <h2>Seção Inicial</h2> -->
             <p class="nameBioCode">BIOCODE JR</p>
-            <p>Atuamos nas áreas de Informática em Saúde e Bioinformática.</p>
+            <p> Atuamos nas áreas de Informática em Saúde e Bioinformática.</p>
             <!--<a href="#" class="btn btn-primary">Learn More</a>-->
           </div>
           <div class="col-md-6">
             <!--<img src="/path/to/image.jpg" alt="Company Image">-->
             <!--<img src="../assets/BioCode.png" alt="Imagem teste" height="100" width="100">-->
-            <img src="../assets/biocodejr-hero1.png" alt="Imagem teste" height="300" width="400">
+            <!--<img src="../assets/biocodejr-hero1.png" alt="Imagem teste" height="300" width="400">-->
+            <img src="../assets/tecnologia.png" alt="Imagem teste" height="300" width="300">
           </div>
         </div>
       </div>
