@@ -10,43 +10,42 @@
   </template>
   
   <style scoped>
-  .card {
-    margin: 20px;
-    padding: 10px;
+    .card {
+      margin: 20px;
+      padding: 10px;
 
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #FFFFFF;
-    height: 300px;
-    width: 450px;
-    border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      border: 2px solid #FFFFFF;
+      height: 320px;
+      width: 100%;
+      border-radius: 20px;
 
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    text-align: center;
-  }
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      text-align: center;
+    }
 
-  .card img{
-    align-self: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 180px;
-    height: 180px;
-  }
+    .card img{
+      align-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 170px;
+      height: 180px;
+    }
 
-  .card-content {
-    display: flex;
-    flex-direction: column;
+    .card-content {
+      display: flex;
+      flex-direction: column;
 
-    padding: 10px;
-    font-size: 16px;
-    color: #FFFFFF;
-  }
+      padding: 10px;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
 
-  .card-content h1{
-    font-size: 28px;
-  }
-
+    .card-content h1{
+      font-size: 28px;
+    }
   </style>
 
 <script>
