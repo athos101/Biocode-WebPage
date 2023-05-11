@@ -21,6 +21,7 @@
        
     <div id="body">
      <Company id="company-section" />
+     <Historia id="historia-section" />
       <Services id="services-section" />
      <Contato id="contato-section" />
     </div>  
@@ -52,7 +53,7 @@ import Footer from './components/footer_example.vue'
 import Company from './components/about_our_company.vue'
 import Services from './components/services.vue'
 import Contato from './components/contato.vue'
-
+import Historia from './components/historia.vue'
 
 export default{
   name: 'App',
@@ -62,6 +63,7 @@ export default{
     Footer,
     Services,
     Contato,
+    Historia,
   },
   methods: {
     
