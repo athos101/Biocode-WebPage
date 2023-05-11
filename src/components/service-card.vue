@@ -16,13 +16,8 @@
 
       background-color: rgba(255, 255, 255, 0);
       border: 2px solid #FFFFFF;
-      height: 320px;
-      width: 100%;
       border-radius: 20px;
-
       display: flex;
-      flex: 1;
-      flex-direction: row;
       text-align: center;
     }
 

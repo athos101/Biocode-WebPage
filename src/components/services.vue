@@ -43,7 +43,7 @@
 
         .title{
             font-size: 64px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             margin-left: 10%;
         }
 
@@ -72,7 +72,7 @@
 
         .title{
             font-size: 32px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             margin-left: 10%;
         }
 
@@ -86,8 +86,8 @@
         .service-card{
             /* margin-left: 5px; */
             /* margin-right: 5px; */
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
     }
 
@@ -103,23 +103,20 @@
 
         .title{
             font-size: 32px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             margin-left: 10%;
         }
 
         .card-row{
             width: 100%;
             display: flex;
-            flex: 1;
+            /* flex: 1; */
             flex-direction: row;
         }
 
         .service-card{
-            /* margin-left: 5px; */
-            /* margin-right: 5px; */
-            
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 
