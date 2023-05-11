@@ -1,18 +1,30 @@
 <template>
     <p class="title">SERVIÇOS</p>
-    <div class="column">
-
-        <div class="row-1">
+    <div v-if="mediumScreen" class="column">
+        <div class="card-row">
             <ServiceCard class="service-card" :title="mobileTitle" :text="mobileText" :item="mobileItem" />
             <ServiceCard class="service-card" :title="webdevTitle" :text="webdevText" :item="webdevItem" />
         </div>
             
-        <div class="row-2">
+        <div class="card-row">
             <ServiceCard class="service-card" :title="sistemasTitle" :text="sistemasText" :item="sistemasItem" />
             <ServiceCard class="service-card" :title="datascienceTitle" :text="datascienceText" :item="datascienceItem" />
         </div>
 
-        <div class="row-3">
+        <div class="card-row">
+            <ServiceCard class="service-card" :title="educationTitle" :text="educationText" :item="educationItem" />
+            <ServiceCard class="service-card" :title="consultTitle" :text="consultText" :item="consultItem" />
+        </div>
+    </div>
+    <div v-if="bigScreen" class="column">
+        <div class="card-row">
+            <ServiceCard class="service-card" :title="mobileTitle" :text="mobileText" :item="mobileItem" />
+            <ServiceCard class="service-card" :title="webdevTitle" :text="webdevText" :item="webdevItem" />
+            <ServiceCard class="service-card" :title="sistemasTitle" :text="sistemasText" :item="sistemasItem" />
+        </div>
+        
+        <div class="card-row">
+            <ServiceCard class="service-card" :title="datascienceTitle" :text="datascienceText" :item="datascienceItem" />
             <ServiceCard class="service-card" :title="educationTitle" :text="educationText" :item="educationItem" />
             <ServiceCard class="service-card" :title="consultTitle" :text="consultText" :item="consultItem" />
         </div>
@@ -21,44 +33,92 @@
 
 <style scoped>
 
-.column{
-    margin: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    @media (max-width: 1200px){
+        .column{
+            margin: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.title{
-    font-size: 32px;
-    margin-bottom: 80px;
-    margin-left: 10%;
-}
+        .title{
+            font-size: 64px;
+            margin-bottom: 60px;
+            margin-left: 10%;
+        }
 
-.row-1{
-    width: 1200px;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-.row-2{
-    width: 1200px;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-.row-3{
-    width: 1200px;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
+        .card-row{
+            /* width: 95%; */
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
 
-.service-card{
-    /* margin-left: 5px; */
-    /* margin-right: 5px; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+        .service-card{
+            /* margin-left: 5px; */
+            /* margin-right: 5px; */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 1800px) and (min-width: 1200px){
+        .column{
+            margin: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title{
+            font-size: 32px;
+            margin-bottom: 60px;
+            margin-left: 10%;
+        }
+
+        .card-row{
+            width: 95%;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
+
+        .service-card{
+            /* margin-left: 5px; */
+            /* margin-right: 5px; */
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    
+    @media (max-width:2400px) and (min-width: 1801px){
+        .column{
+            width: 98%;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title{
+            font-size: 32px;
+            margin-bottom: 60px;
+            margin-left: 10%;
+        }
+
+        .card-row{
+            width: 100%;
+            display: flex;
+            /* flex: 1; */
+            flex-direction: row;
+        }
+
+        .service-card{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 
 </style>
 
@@ -72,6 +132,9 @@ export default {
     },
     data(){
         return{
+            mediumScreen:false,
+            bigScreen:false,
+
             mobileTitle: "Desenvolvimento Mobile",
             mobileText: 'A praticidade dos dispositivos móveis e a internet diminuem a distância entre pessoas e serviços. Por isso, desenvolvemos aplicativos que sirvam de ferramenta para o trabalho em saúde, comunicação, automatização de processos, registro e muito mais.',
             mobileItem: "smartphone.png",
@@ -91,6 +154,19 @@ export default {
             consultText: "O surgimento de novas tecnologias se tornou uma tendência nos últimos anos. Nossos serviços podem auxiliar no planejamento de projetos, na tomada de decisões e no acompanhamento de todas as atividades para que a sua empresa se mantenha competitiva e atuante no mercado.",
             consultItem: "consultor.png",
         }
+    },
+    mounted() {
+        window.addEventListener('resize', this.handleResize)
+        this.handleResize()
+    },
+    methods: {
+        handleResize() {
+        this.mediumScreen = window.innerWidth <= 1800
+        this.bigScreen = window.innerWidth > 1800
+        }
+    },
+    beforeDestroy() {
+        window.removeEventListener('resize', this.handleResize)
     }
 }
 </script>
