@@ -20,13 +20,10 @@
         
        
     <div id="body">
-<<<<<<< HEAD
-=======
      <Company id="company-section" />
      <Historia id="historia-section" />
       <Services id="services-section" />
      <Contato id="contato-section" />
->>>>>>> 3005b1d3a5940bdeb763a8d82fa3195cc5bacb22
     </div>  
 
       <section id="footer">

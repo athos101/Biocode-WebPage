@@ -48,6 +48,7 @@
 }
 
 .column {
+  color: #ffffff;
   flex: 1;
   margin: 20px;
   display: flex;
@@ -73,9 +74,19 @@
 }
 
 .botao {
-  background-color: #FA447B;
+  background-color: #8F0C3C;
+  color: #ffffff;
   border: none;
-  font-size: 15px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.botao:hover{
+  background-color: #F84D80;
+  /* color: #ffffff; */
+  transition: 0.5s;
 }
 
 </style>
