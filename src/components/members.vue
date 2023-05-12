@@ -105,8 +105,8 @@ export default {
   data() {
     return {
       images: [
-        require('../assets/mimikyu.png'),
-        require('../assets/mimikyu.png'),
+        require('../assets/perfil.png'),
+        require('../assets/infomaniac.png'),
         require('../assets/mimikyu.png'),
       ],
       currentImage: 0,
