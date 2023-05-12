@@ -89,7 +89,7 @@ data() {
 
     return{
     images: [
-       require('../assets/biocodejr-hero1.png'),
+       require('../assets/mimikyu.png'),
     ],
     currentImage: 0,
     shouldUpdateImage: false
