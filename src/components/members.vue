@@ -106,7 +106,7 @@ export default {
     return {
       images: [
         require('../assets/perfil.png'),
-        require('../assets/'infomaniac.png'),
+        require('../assets/infomaniac.png'),
         require('../assets/mimikyu.png'),
       ],
       currentImage: 0,
