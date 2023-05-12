@@ -87,7 +87,7 @@ button {
 
 <script>
 export default{
-    name: 'members',
+    name: 'Members',
 
 data() {
 

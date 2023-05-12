@@ -56,14 +56,14 @@
 
     .image{
         height:250px;
-        align:center;;
+        align:center;
         position:absolute;
         right:5%;
     }
 
     .image2{
         height: 250px;
-        align:center;;
+        allign:center;
         position: absolute;
         right:43%;
     }
