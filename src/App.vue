@@ -54,12 +54,20 @@ import Company from './components/about_our_company.vue'
 import Services from './components/services.vue'
 import Contato from './components/contato.vue'
 import Historia from './components/historia.vue'
+<<<<<<< HEAD
+<<<<<<< HEAD
+import Members from './components/members.vue'
+=======
+>>>>>>> 8ccd3454eb48f71a45ef536ccf7567be6f8aece8
+=======
+>>>>>>> 8ccd3454eb48f71a45ef536ccf7567be6f8aece8
 
 export default{
   name: 'App',
   components: {
     Header,
     Company,
+    
     Footer,
     Services,
     Contato,
