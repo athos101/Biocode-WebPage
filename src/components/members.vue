@@ -1,14 +1,13 @@
 <template>
-<section class="container">
-    <h1 class="title">Membros</h1>
+  <h1 class="title">Membros</h1>
+  <section class="container">
     <div class="image-container">
       <img
         v-bind:src="images[currentImage]"
         class="{ 'animate__animated': shouldUpdateImage, 'animate__fadeOut': shouldUpdateImage }"
         @animationend="shouldUpdateImage = false"
         alt="imagemMembro"
-        width="232"
-        height="191"
+        style="height: 480px;"
         top="92"
         left="437"
       />
@@ -32,21 +31,17 @@
 .container{
    background-color: rgba(217, 217, 217, 0.1);;
     border-radius: 30px;
-    height: 326px;
-    width: 1072px;
-    left: 184px;
-    top: 1864px;
-
-   
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-bottom: 120px;
 }
 
 .image-container {
-   width: 232px; /* Largura desejada para a imagem */
-  height: 191px; /* Altura desejada para a imagem */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,16 +53,18 @@
     color: #fff;
      position: relative;
      top: 0;
-    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
+    margin-left: 5%;
 }
 
 .controls{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 98%;
+    top: 0%;
+    width: 95%;
     position: relative;
+    filter: invert(100%);
 }
 
 
@@ -79,7 +76,6 @@ button {
   border-radius: 4px;
   padding: 8px 12px;
   cursor: pointer;
-
 }
 
 </style>
@@ -93,9 +89,7 @@ data() {
 
     return{
     images: [
-       require('../assets/perfil.png'),
-        require('../assets/perfil.png'),
-        require('../assets/perfil.png'),
+       require('../assets/biocodejr-hero1.png'),
     ],
     currentImage: 0,
     shouldUpdateImage: false

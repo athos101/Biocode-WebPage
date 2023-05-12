@@ -22,6 +22,7 @@
     <div id="body">
      <Company id="company-section" />
      <Historia id="historia-section" />
+     <Members id="members-section" />
       <Services id="services-section" />
      <Contato id="contato-section" />
     </div>  
@@ -35,15 +36,14 @@
 
 <style>
 
-body{
-        padding: 0;
-        margin: 0;
-
-      }
   body{
-    background-color: #0A1D3E;
-    font-family: 'Montserrat', sans-serif;
-  }
+      padding: 0;
+      margin: 0;
+
+      background-color: #0A1D3E;
+      font-family: 'Montserrat', sans-serif;
+    }
+
 </style>
 
 <script>
@@ -54,20 +54,14 @@ import Company from './components/about_our_company.vue'
 import Services from './components/services.vue'
 import Contato from './components/contato.vue'
 import Historia from './components/historia.vue'
-<<<<<<< HEAD
-<<<<<<< HEAD
 import Members from './components/members.vue'
-=======
->>>>>>> 8ccd3454eb48f71a45ef536ccf7567be6f8aece8
-=======
->>>>>>> 8ccd3454eb48f71a45ef536ccf7567be6f8aece8
 
 export default{
   name: 'App',
   components: {
     Header,
     Company,
-    
+    Members,
     Footer,
     Services,
     Contato,
