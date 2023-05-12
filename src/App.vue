@@ -17,6 +17,7 @@
     <div id="body">
       <Company />
       <Company />
+      <Members />
       <Services />
       <Contato />
     </div>  
@@ -42,6 +43,8 @@ import Footer from './components/footer_example.vue'
 import Company from './components/about_our_company.vue'
 import Services from './components/services.vue'
 import Contato from './components/contato.vue'
+import Members from './components/members.vue'
+
 
 
 export default{
@@ -52,6 +55,7 @@ export default{
     Footer,
     Services,
     Contato,
+    Members,
   },
   methods: {
     scroll() {
